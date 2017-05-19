@@ -6,13 +6,13 @@
 <link href="css/docs.min.css" rel="stylesheet">
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script src="js/jquery.min.js"></script>
 
 <!--//theme style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Wedding Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Wedding Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- start menu -->
@@ -21,10 +21,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 
 </head>
-<body> 
-<!--header-->	
+<body>
+<!--header-->
 <script src="js/responsiveslides.min.js"></script>
-<script>  
+<script>
     $(function () {
       $("#slider").responsiveSlides({
       	auto: false,
@@ -35,18 +35,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     });
   </script>
-  
+
 <div class="header-top">
-	 <div class="header-bottom">			
+	 <div class="header-bottom">
 				<div class="logo">
 					<h1><a href="index.html">MARVEL</a></h1>
 				</div>
-			 <!---->		 
+			 <!---->
 			 <div class="top-nav">
 				<ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>
 					<li class="grid"><a href="news.html">News</a></li>
 					<li class="grid"><a href="product.html">Products</a></li>
-					<li class="grid"><a href="contact.html">Contact</a></li>	
+					<li class="grid"><a href="contact.html">Contact</a></li>
 				</ul>
 				<div class="clearfix"> </div>
 			 </div>
@@ -61,11 +61,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 	<div class="clearfix"> </div>
 			 </div>
 			 <div class="clearfix"> </div>
-			 <!---->			 
+			 <!---->
 			 </div>
 			<div class="clearfix"> </div>
 </div>
-<!---->	
+<!---->
 <div class="container">
 	  <ol class="breadcrumb">
 		  <li><a href="index.html">Home</a></li>
@@ -74,41 +74,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 <div class="registration">
 		 <div class="registration_left">
 			 <h2>new user? <span> create an account </span></h2>
-			 <!-- [if IE] 
-				< link rel='stylesheet' type='text/css' href='ie.css'/>  
-			 [endif] -->  
-			  
-			 <!-- [if lt IE 7]>  
-				< link rel='stylesheet' type='text/css' href='ie6.css'/>  
-			 <! [endif] -->  
+			 <!-- [if IE]
+				< link rel='stylesheet' type='text/css' href='ie.css'/>
+			 [endif] -->
+
+			 <!-- [if lt IE 7]>
+				< link rel='stylesheet' type='text/css' href='ie6.css'/>
+			 <! [endif] -->
 			 <script>
 				(function() {
-			
+
 				// Create input element for testing
 				var inputs = document.createElement('input');
-				
+
 				// Create the supports object
 				var supports = {};
-				
+
 				supports.autofocus   = 'autofocus' in inputs;
 				supports.required    = 'required' in inputs;
 				supports.placeholder = 'placeholder' in inputs;
-			
+
 				// Fallback for autofocus attribute
 				if(!supports.autofocus) {
-					
+
 				}
-				
+
 				// Fallback for required attribute
 				if(!supports.required) {
-					
+
 				}
-			
+
 				// Fallback for placeholder attribute
 				if(!supports.placeholder) {
-					
+
 				}
-				
+
 				// Change text inside send button on submit
 				var send = document.getElementById('register-submit');
 				if(send) {
@@ -116,49 +116,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						this.innerHTML = '...Sending';
 					}
 				}
-			
+
 			 })();
 			 </script>
 			 <div class="registration_form">
 			 <!-- Form -->
-				<form>
+				<form form action="account/handleCreate.php" class="form-horizontal" method="post">
 					<div>
 						<label>
-							<input placeholder="first name" type="text" tabindex="1">
+							<input placeholder="first name" type="text" tabindex="1" name="f_name">
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="last name" type="text" tabindex="2">
+							<input placeholder="last name" type="text" tabindex="2" name="l_name">
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="email address" type="email" tabindex="3">
+							<input placeholder="email address" type="email" tabindex="3"name="email">
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="Mobile" type="email" tabindex="3">
+							<input placeholder="Mobile" type="text" tabindex="3" name="mobile">
 						</label>
-					</div>					
+					</div>
 						<div class="sky_form1">
 							<ul>
-								<li><label class="radio left"><input type="radio" name="radio" checked=""><i></i>Male</label></li>
-								<li><label class="radio"><input type="radio" name="radio"><i></i>Female</label></li>								
+								<li><label class="radio left"><input type="radio" name="radio" value="male" checked=""><i></i>Male</label></li>
+								<li><label class="radio"><input type="radio" name="radio" value="female"><i></i>Female</label></li>
 							</ul>
 							<div class="clearfix"></div>
-						</div>					
+						</div>
 					<div>
 						<label>
-							<input placeholder="password" type="password" tabindex="4">
+							<input placeholder="password" type="password" tabindex="4" name="password">
 						</label>
-					</div>						
+					</div>
 					<div>
 						<label>
-							<input placeholder="retype password" type="password" tabindex="4">
+							<input placeholder="Confirm password" type="password" tabindex="4" name="cpassword">
 						</label>
-					</div>	
+					</div>
 					<div>
 						<input type="submit" value="create an account" id="register-submit">
 					</div>
@@ -173,17 +173,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <h2>existing user</h2>
 			 <div class="registration_form">
 			 <!-- Form -->
-				<form>
+				<form action="account/handleLogin.php" method="POST">
 					<div>
 						<label>
-							<input placeholder="email" type="email" tabindex="3" required>
+							<input placeholder="email" type="email" name="email" tabindex="3" required>
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="password" type="password" tabindex="4" required>
+							<input placeholder="password" type="password" name="password" tabindex="3" required>
 						</label>
-					</div>						
+					</div>
 					<div>
 						<input type="submit" value="sign in">
 					</div>
@@ -213,8 +213,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="#">New Products</a></li>
 						<li><a href="#">Location</a></li>
 						<li><a href="#">Our Stores</a></li>
-						<li><a href="#">Best Sellers</a></li>	
-					</ul>					
+						<li><a href="#">Best Sellers</a></li>
+					</ul>
 			 </div>
 			 <div class="col-md-3 ftr-grid">
 					<h3>More Info</h3>
@@ -223,8 +223,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="#">FAQ</a></li>
 						<li><a href="contact.html">Contact</a></li>
 						<li><a href="#">Shipping</a></li>
-						<li><a href="#">Membership</a></li>	
-					</ul>					
+						<li><a href="#">Membership</a></li>
+					</ul>
 			 </div>
 
 		 </div>
@@ -233,14 +233,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="copywrite">
 	 <div class="container">
 		 <div class="copy">
-			<p>A Kassa's production<a href="http://www.google.com/" target="_blank" title="Kassa"></a> 
+			<p>A Kassa's production<a href="http://www.google.com/" target="_blank" title="Kassa"></a>
 		 </div>
-		 <div class="social">							
+		 <div class="social">
 				<a href="#"><i class="facebook"></i></a>
 				<a href="#"><i class="twitter"></i></a>
-				<a href="#"><i class="dribble"></i></a>	
-				<a href="#"><i class="google"></i></a>	
-				<a href="#"><i class="youtube"></i></a>	
+				<a href="#"><i class="dribble"></i></a>
+				<a href="#"><i class="google"></i></a>
+				<a href="#"><i class="youtube"></i></a>
 		 </div>
 		 <div class="clearfix"></div>
 	 </div>
