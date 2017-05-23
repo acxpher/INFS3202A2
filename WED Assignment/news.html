@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Checkout</title>
+<title>Home</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
+<link href="css/docs.min.css" rel="stylesheet">
 <!-- Custom Theme files -->
 <!--theme style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script src="js/jquery.min.js"></script>
-
-
-<!--//theme-style-->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<!--//theme style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Wedding Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
@@ -21,12 +19,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/simpleCart.min.js"> </script>
 <!-- start menu -->
 <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-<script>$(document).ready(function(){$(".memenu").memenu();});</script>
 <!-- /start menu -->
 </head>
 <body>
-<!-- header -->
-<div class="header-top">
+<!--header--><div class="header-top">
 	 <div class="header-bottom">
 				<div class="logo">
 					<h1><a href="index.html">MARVEL</a></h1>
@@ -38,7 +34,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li class="grid"><a href="product.html">Products</a></li>
 					<li class="grid"><a href="contact.html">Contact</a></li>
 				</ul>
-				<div class="clearfix"> </div>
 			 </div>
 			 <!---->
 			 <div class="cart box_1">
@@ -55,101 +50,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 </div>
 			<div class="clearfix"> </div>
 </div>
-<!-- check out -->
-<div class="container">
-	<div class="check-sec">
-		<div class="col-md-3 cart-total">
-			<a class="continue" href="product.html">Continue to basket</a>
-			<div class="price-details">
-				<h3>Price Details</h3>
-				<span>Total</span>
-				<span class="total1">6200.00</span>
-				<span>Discount</span>
-				<span class="total1">10%(Festival Offer)</span>
-				<span>Delivery Charges</span>
-				<span class="total1">150.00</span>
-				<div class="clearfix"></div>
-			</div>
-			<ul class="total_price">
-			   <li class="last_price"> <h4>TOTAL</h4></li>
-			   <li class="last_price"><span>6150.00</span></li>
-			</ul>
-			<div class="clearfix"></div>
-			<div class="clearfix"></div>
-			<a class="order" href="#">Place Order</a>
-			<div class="total-item">
-				<h3>OPTIONS</h3>
-				<h4>COUPONS</h4>
-				<a class="cpns" href="#">Apply Coupons</a>
-			</div>
-		</div>
-		<div class="col-md-9 cart-items">
-			<h1>My Shopping Bag (2)</h1>
-				<script>$(document).ready(function(c) {
-					$('.close1').on('click', function(c){
-						$('.cart-header').fadeOut('slow', function(c){
-							$('.cart-header').remove();
-						});
-						});
-					});
-			   </script>
-			<div class="cart-header">
-				<div class="close1"> </div>
-				<div class="cart-sec simpleCart_shelfItem">
-						<div class="cart-item cyc">
-							<img src="images/p4.jpg" class="img-responsive" alt=""/>
-						</div>
-					   <div class="cart-item-info">
-						    <h3><a href="single.html">Rock Light Emergency Lights</a><span>Model No: RL-5511S</span></h3>
-							<ul class="qty">
-								<li><p>Size : 5</p></li>
-								<li><p>Qty : 1</p></li>
-							</ul>
-							<div class="delivery">
-								 <p>Service Charges : Rs.100.00</p>
-								 <span>Delivered in 2-3 bussiness days</span>
-								 <div class="clearfix"></div>
-							</div>
-					   </div>
-					   <div class="clearfix"></div>
+<!----->
+<div class="news-model">
+	<div class="container">
+<ol class="breadcrumb">
+ <li><a href="index.html">Home</a></li>
+ <li class="active">News</li>
+</ol>
+<div class="col-md-9 news-model-sec">
 
-				  </div>
-			 </div>
-			 <script>$(document).ready(function(c) {
-					$('.close2').on('click', function(c){
-							$('.cart-header2').fadeOut('slow', function(c){
-						$('.cart-header2').remove();
-					});
-					});
-					});
-			 </script>
-			<div class="cart-header2">
-				<div class="close2"> </div>
-					<div class="cart-sec simpleCart_shelfItem">
-						<div class="cart-item cyc">
-							 <img src="images/p3.jpg" class="img-responsive" alt=""/>
-						</div>
-					    <div class="cart-item-info">
-							 <h3><a href="single.html">Show Lights</a><span>Model No: SL-3578</span></h3>
-							<ul class="qty">
-								<li><p>Size : 5</p></li>
-								<li><p>Qty : 1</p></li>
-							</ul>
-							<div class="delivery">
-								<p>Service Charges : Rs.100.00</p>
-								<span>Delivered in 2-3 bussiness days</span>
-								<div class="clearfix"></div>
-							</div>
-					   </div>
-					   <div class="clearfix"></div>
-				    </div>
-			</div>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
+<h2>Latest News</h2><br/>
+<h3>New spider movie coming</h3>
+<p id="spider"></p><br/>
+<button type="button" onclick="loadDoc()">Read more</button>
+<button type="button" id="less">Read less</button><br/>
+
+<script>
+	function loadDoc() {
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	     document.getElementById("spider").innerHTML = this.responseText;
+	    }
+	  };
+	  xhttp.open("GET", "spider.txt", true);
+	  xhttp.send();
+}
+$(document).ready(function(){
+    $("#less").click(function(){
+        $("#spider").toggle();
+    });
+	});
+	</script>
+
+</div>
+</div>
 </div>
 
-
+<!---->
 <div class="footer">
 	 <div class="container">
 		 <div class="footer-grids">
@@ -177,12 +115,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="#">Membership</a></li>
 					</ul>
 			 </div>
-
 			 <div class="clearfix"></div>
 		 </div>
 	 </div>
 </div>
-<!---->
 <div class="copywrite">
 	 <div class="container">
 		 <div class="copy">
