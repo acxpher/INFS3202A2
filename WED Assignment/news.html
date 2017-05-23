@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="col-md-9 news-model-sec">
 
 <h2>Latest News</h2><br/>
-<h3>New spider movie coming</h3>
+<h3 id="news"></h3>
 <p id="spider"></p><br/>
 <button type="button" onclick="loadDoc()">Read more</button>
 <button type="button" id="less">Read less</button><br/>
@@ -82,6 +82,12 @@ $(document).ready(function(){
     });
 	});
 	</script>
+	<script>
+	function myFunc(myObj) {
+	  document.getElementById("news").innerHTML = myObj.title;
+	}
+	</script>
+	<script src="json.php"></script>
 
 </div>
 </div>
