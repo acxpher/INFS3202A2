@@ -11,10 +11,12 @@ if(isset($_POST["email"])) {
     $semail_subject = "Thank you contacting Marvel!\n\n ";
 
     function died($error) {
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
+      ?>
+      <script>
+      alert( "We are very sorry, but there were error(s) found with the form you submitted. These errors appear below.<?php echo $error ?>Please go back and fix these errors.");
+      window.location.href = "../contact.php";
+        </script>
+        <?php
         die();
     }
     // validation expected data exists
@@ -31,16 +33,16 @@ if(isset($_POST["email"])) {
     $email_exp    = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
   if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $error_message .= 'The Email Address you entered does not appear to be valid.';
   }
     $string_exp = "/^[A-Za-z .'-]+$/";
 
   if(!preg_match($string_exp,$name)) {
-    $error_message .= 'The Name you entered does not appear to be valid.<br />';
+    $error_message .= 'The Name you entered does not appear to be valid.';
 
   }
   if(strlen($msg) < 2) {
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    $error_message .= 'The Comments you entered do not appear to be valid.';
 
   }
 

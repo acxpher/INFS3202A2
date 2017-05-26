@@ -10,6 +10,7 @@ function getDbConnect() {
     // get a database connect to studentacad database
     $con = mysqli_connect ("localhost", "root", "", "marvel");
     return $con;
-}
+};
+
 
 ?>

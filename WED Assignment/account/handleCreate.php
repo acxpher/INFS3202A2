@@ -1,4 +1,5 @@
 
+
         <?php
         //require 'checkAdminLoginStatus.php';
         require 'dbfunction.php';
@@ -19,7 +20,7 @@
         <?php
 
         if ($password != $cpassword) {
-            header('Location: ../account.html');
+            header('Location: ../account.php');
         }
         if (!mysqli_connect_errno($con)) {
             mysqli_query($con, "Insert into accounts(email,fname,lname,mobile,gender,password) "
@@ -28,12 +29,15 @@
                     //. " VALUES('$email','$fname','$lname','$mobile','$password')");
 
             if (mysqli_affected_rows($con) > 0) {
-                echo "You have successfully add an account. <br/>";
-                echo "<a class='btn btn-default' href='../login.html'>Back</a>";
+              header('Location: ../welcome.php');
+                //echo "<br/> <br/> <br/> <h1><center>";
+              //  echo "You have successfully signed up. <br/>";
+              //  echo "<a class='btn btn-default' href='../login.php'>Back</a>";
+              //  echo "<br/> <br/> <br/> </center></h1>";
 
             } else {
                 echo "Something went wrong. Please try again.</div>";
-                echo "<a class='btn btn-default' href='../login.html'>Back</a>";
+                echo "<a class='btn btn-default' href='../login.php'>Back</a>";
             }
             mysqli_close($con);
         }
