@@ -881,10 +881,13 @@ ul.dropdown-menu1 li a:hover{
 .company_address p span:hover{
 	color:#00B895;
 }
-.map iframe{
-	width:100%;
-	border:none;
-}
+
+#map {
+        height: 300px;
+        width: 80%;
+    }
+
+
 
 
 
