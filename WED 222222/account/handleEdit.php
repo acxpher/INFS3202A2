@@ -18,7 +18,7 @@
 
       if (!mysqli_connect_errno($con)) {
 
-          mysqli_query($con, "UPDATE accounts SET fname='$fname', lname='$lname', mobile='$mobile',password='$password' WHERE email = '$email'");
+          mysqli_query($con, "UPDATE accounts SET fname='$fname', lname='$lname', mobile='$mobile',password=AES_ENCRYPT('$password','3202') WHERE email = '$email'");
 
           if (mysqli_affected_rows($con) > 0) {
 

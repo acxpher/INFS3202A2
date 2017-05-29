@@ -97,12 +97,12 @@ require'account/dbfunction.php';
 
 					<div>
 						<label>
-							<input placeholder="" type="password" tabindex="4" name="password" value="<?php echo $info[5]?>">
+							<input placeholder="Password" type="password" tabindex="4" name="password" >
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="Confirm password" type="password" tabindex="4" name="cpassword" value="<?php echo $info[5]?>">
+							<input placeholder="Confirm Password" type="password" tabindex="4" name="cpassword" >
 						</label>
 					</div>
 					<div>

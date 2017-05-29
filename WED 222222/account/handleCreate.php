@@ -25,7 +25,7 @@
         if (!mysqli_connect_errno($con)) {
             mysqli_query($con, "Insert into accounts(email,fname,lname,mobile,gender,password) "
                     //. " VALUES('$loginid','$name',AES_ENCRYPT('$password','st2220'))");
-                    . " VALUES('$email','$fname','$lname','$mobile','$gender','$password')");
+                    . " VALUES('$email','$fname','$lname','$mobile','$gender',AES_ENCRYPT('$password','3202'))");
                     //. " VALUES('$email','$fname','$lname','$mobile','$password')");
 
             if (mysqli_affected_rows($con) > 0) {
