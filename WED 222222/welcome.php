@@ -16,7 +16,7 @@ require'account/checkLoginStatus.php';
                         ?>
 <div >
     <div  style="margin-left:28%;text-alien:left">
-             <section id="test1111">
+             <section id="welcome">
     <a class="btn btn-lg btn-default hidden-xs" href="product.php">View products</a></br>
     <a class="btn btn-lg btn-default hidden-xs" href="checkout.php">View my cart</a></br>
     <a class="btn btn-lg btn-default hidden-xs" href="editacc.php?edit=<?php echo $basicinfo[0]?>">Update Account</a></br>

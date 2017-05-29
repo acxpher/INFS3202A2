@@ -1188,25 +1188,23 @@ display:inline-block;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  border:none;
   outline:none;
   margin-right:2em;
   margin-bottom:1em;
   transition: 0.5s all;
--webkit-transition: 0.5s all;
--moz-transition: 0.5s all;
--o-transition: 0.5s all;
+  border:2px solid transparent;
+
 }
 .log form input[type="submit"]:hover,a.acount-btn:hover{
-	background:#c0120b;
-	color:#fff;
-	text-decoration:none;
+	background: transparent;
+	color: #20346f;
+	border:2px solid #20346f;
 }
 .log a{
-text-decoration:underline;
-font-size:0.85em;
-font-weight:400;
-color:#7b7a7a;
+	text-decoration:underline;
+	font-size:0.85em;
+	font-weight:400;
+	color:#7b7a7a;
 }
 a.acount-btn {
   display:inline-block;
@@ -1220,9 +1218,8 @@ a.acount-btn {
   outline:none;
   margin-bottom:1em;
   transition: 0.5s all;
--webkit-transition: 0.5s all;
--moz-transition: 0.5s all;
--o-transition: 0.5s all;
+  border:2px solid transparent;
+
 }
 .login-right p {
 color: #999;
@@ -1935,7 +1932,7 @@ input.item_add.items {
 }
 
 
-#test1111 .btn {
+#welcome .btn {
     background: transparent;
     border: 3px solid #20346f;
     border-radius: 0px;
@@ -1950,13 +1947,13 @@ input.item_add.items {
     transition: all 0.4s ease-in-out;
 }
 
-#test1111 .btn:hover {
+#welcome .btn:hover {
   background: #20346f;
   color: #ffffff;
   border-color: transparent;
 }
 
-#test1111 .btn-success {
+#welcome .btn-success {
     background: #ffffff;
     color: #242424;
     border-color: transparent;
