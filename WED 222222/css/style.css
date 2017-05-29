@@ -1933,8 +1933,8 @@ input.item_add.items {
 
 
 #welcome .btn {
-    background: transparent;
-    border: 3px solid #20346f;
+    background: #00a0dc;
+    border:2px solid transparent;
     border-radius: 0px;
     color: #20346f;
     font-weight: 700;
@@ -1948,9 +1948,9 @@ input.item_add.items {
 }
 
 #welcome .btn:hover {
-  background: #20346f;
-  color: #ffffff;
-  border-color: transparent;
+	background: transparent;
+	color: #20346f;
+	border:2px solid #20346f;
 }
 
 #welcome .btn-success {
