@@ -110,12 +110,12 @@
 				<form action="account/handleLogin.php" method="POST">
 					<div>
 						<label>
-							<input placeholder="email" type="email" name="email" tabindex="3" required>
+							<input placeholder="account id" type="text" name="email" tabindex="5" required>
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="password" type="password" name="password" tabindex="3" required>
+							<input placeholder="password" type="password" name="password" tabindex="5" required>
 						</label>
 					</div>
 					<div>

@@ -5,7 +5,7 @@ require 'account/dbfunction.php';
 ?>
 
 <?php
-$total="";
+$total=0;
 $pay="";
 $total_dollar="";
 $pay_dollar="";
@@ -15,7 +15,7 @@ $con = getDbConnect();
 			 } else {
 					 $result = mysqli_query($con, "SELECT * FROM cart");
 					while ($item= mysqli_fetch_array($result)) {
-						$total += $item["price"];
+						$total += $item["1"];
 					  $total_dollar='$'.$total;
 						$pay=$total*0.9+150;
 						$pay_dollar='$'.$pay;

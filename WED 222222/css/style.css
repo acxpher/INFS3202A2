@@ -72,7 +72,18 @@ h1.b1,h2.b2,h3.b3 {
 .itemContainer a{
 	text-decoration:none;
 }
-
+.cartHeaders{
+	width:100%;
+	float:left;
+}
+.cartHeaders div{
+	float:left;
+	margin: 5px 20px 5px 20px ;
+}
+.glyphicon-shopping-cart:before {
+  margin-left: 5px;
+  font-size:1.2em;
+}
 .grid_1 img{
 	margin-bottom:1em;
 }
@@ -884,6 +895,57 @@ ul.dropdown-menu1 li a:hover{
 
 
 /*--checkout--*/
+.cart h2{
+	font-size:1.5em;
+	margin-bottom:1em;
+}
+.cart-sec{
+	margin-bottom:3em;
+}
+.cart-item{
+	width:20%;
+	float:left;
+	margin-right:2em;
+}
+.cart-item img{
+	width:100%;
+}
+.cart-item-info{
+	width:75%;
+	float:left;
+	margin-top: 3em;
+}
+.cart-item-info h3{
+	font-size:1em;
+}
+.cart-item-info h3 a{
+	color:#000;
+	font-family: 'Dosis-Bold';
+}
+.cart-item-info h3 span{
+	display:block;
+	font-weight:400;
+	font-size: 0.8em;
+  margin: 0.7em 0;
+}
+.cart-item-info h4 span{
+	font-size:0.65em;
+	font-weight:400;}
+.total-item,.cart-items{
+		margin-top:0em;
+		padding-bottom:2em;
+	}
+
+.cart-items h1 {
+	  font-size: 1.5em;
+	  margin-bottom:2em;
+	}
+.cart-header {
+  position: relative;
+}
+.cart-header2 {
+  position: relative;
+}
 
 .check-sec{
 	padding:5em 0 0;
@@ -1006,6 +1068,10 @@ ul.total_price li.last_price span{
 	color:#000;
 	font-size:1.2em;
 	margin-bottom:1em;
+}
+.cart-items h1 {
+  font-size: 1.5em;
+  margin-bottom:2em;
 }
 .price-details span{
 	width: 50%;
@@ -1683,6 +1749,9 @@ span.item_price {
     width: 46%;
 }
 
+.cart-item-info {
+    width: 100%;
+}
 .single-para h5 {
     font-size: 1.5em;
 }
@@ -1824,6 +1893,10 @@ input.item_add.items {
 .product-grid {
     width: 100%;
 	margin: 0 0% 4% 0;
+}
+.cart-item {
+    width: 50%;
+    margin-right: 0em;
 }
 .btm-grid {
     width: 100%;
@@ -1988,17 +2061,5 @@ input.item_add.items {
 .centerbtn {
 	display: block;
     text-align: center;
-	
+
 }
-
-
-
-
-
-
-
-
-
-
-
-

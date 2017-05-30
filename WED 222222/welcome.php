@@ -11,8 +11,8 @@ require'account/checkLoginStatus.php';
                 ?>
 <?php
               echo "<br/> <br/> <br/> <h1><center>";
-              echo "Welcome Back! <br/>" .$basicinfo[1];
-              echo "</center></h1><br/>";
+              echo "Welcome Back! <br/>" .$basicinfo[2];
+              echo "</center></h1>";
                         ?>
 <div >
     <div  style="margin-left:28%;text-alien:left">

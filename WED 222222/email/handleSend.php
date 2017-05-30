@@ -80,7 +80,7 @@ $mail->SMTPSecure="tls";
 $mail->Host="smtp.office365.com";
 $mail->Port=587;
 $mail->Username="g.xu@uqconnect.edu.au";
-$mail->Password="";
+$mail->Password="0951877qQ";
 $mail->IsHTML(true);
 
 $mail->SetFrom("g.xu@uqconnect.edu.au");
@@ -103,7 +103,7 @@ $smail->SMTPSecure="tls";
 $smail->Host="smtp.office365.com";
 $smail->Port=587;
 $smail->Username="g.xu@uqconnect.edu.au";
-$smail->Password="";
+$smail->Password="0951877qQ";
 $smail->IsHTML(true);
 
 $smail->SetFrom("g.xu@uqconnect.edu.au");
@@ -114,6 +114,12 @@ $smail->AddAddress($email_from);
 if(!$smail->Send()){
     echo"Mail Error:".$mail->ErrorInfo;
 }else{
-    echo "<p id='endtext'> Notification has been sent!</p>";}
+  echo'  <script>';
+  echo"   alert('Email has been sent!')";
+  echo'   </script>';
+}
   }
 ?>
+<script>
+window.location.href = "../contact.php";
+</script>

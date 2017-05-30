@@ -5,26 +5,20 @@ date_default_timezone_set('Etc/UTC');
 include "class.phpmailer.php";
 include "class.smtp.php";
 
-$con = getDbConnect();
-	if (mysqli_connect_errno($con)) {
-					 "Failed to connect to MySQL: " . mysqli_connect_error();
-			 } else {
-					 $result = mysqli_query($con, "SELECT * FROM cart");
-					while ($item= mysqli_fetch_array($result)) {
+/*$con = getDbConnect();
 
-            if (mysqli_connect_errno($con)) {
+
+      if (mysqli_connect_errno($con)) {
                    "Failed to connect to MySQL: " . mysqli_connect_error();
                } else {
-                   $result = mysqli_query($con, "SELECT * FROM cart WHERE email='$basicinfo[0]'");
-
-                 while ($cart= mysqli_fetch_array($result)) {
+                   $mysqli_result = mysqli_query($con, "SELECT * FROM cart WHERE email='$basicinfo[0]'");
+                 while ($cart= mysqli_fetch_array($mysqli_result)) {
                    $name=$cart["name"];
                    $price=$cart["price"];
                    $quantity=$cart["quantity"];
                    $image=$cart["image"];
                    $buyer=$cart["buyer"];
                  }}
-}
       if(isset($buyer)) {
                        $email_to = $buyer;
                        $email_subject = "we have reveived your order \n\n ";
@@ -83,7 +77,7 @@ $con = getDbConnect();
                    'Reply-To: '.$email_from."\r\n" .
                    'X-Mailer: PHP/' . phpversion();
                    //mail($email_to, $email_subject, $email_message, $headers);
-                    */
+
 
                    $mail = new PHPMailer();
                    $mail->IsSMTP();
@@ -95,7 +89,7 @@ $con = getDbConnect();
                    $mail->Host="smtp.office365.com";
                    $mail->Port=587;
                    $mail->Username="g.xu@uqconnect.edu.au";
-                   $mail->Password="";
+                   $mail->Password="0951877qQ";
                    $mail->IsHTML(true);
 
                    $mail->SetFrom("g.xu@uqconnect.edu.au");
@@ -107,15 +101,12 @@ $con = getDbConnect();
                    }else{
                    echo "<p id='endtext'> Message has been sent!</p>";}
 
+*/
+                       echo'  <script>';
+                       echo "alert('Your order has submitted!')";
+                       echo'  </script>';
 
-                   if(!$smail->Send()){
-                       echo 'alert("Mail Error:".$mail->ErrorInfo);';
-                   }else{
-                       echo 'alert("Your order has submitted!")';}
-
-}}
 ?>
 <script>
-alert('Your order has submitted!');
-window.location.href = "../checkout.php";
+  window.location.href = "../checkout.php";
 </script>

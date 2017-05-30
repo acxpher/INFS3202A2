@@ -61,22 +61,30 @@ require'account/dbfunction.php';
 			 <!-- Form -->
 <?php
 
-               $con = getDbConnect();
-               $email = $_GET['edit'];
+        $con = getDbConnect();
+        $id = $_GET['edit'];
 
-               if (mysqli_connect_errno($con)) {
-                   "Failed to connect to MySQL: " . mysqli_connect_error();
-               } else {
-                   $result = mysqli_query($con, "SELECT * FROM accounts where email = '$email'");
+               if (!mysqli_connect_errno($con)) {
 
-                   while ($info = mysqli_fetch_array($result)) {
+								$stmt = $con->prepare("SELECT * FROM accounts WHERE accountid = ?");
+		 					  $stmt->bind_param("i",$accountid);
+		 					  $accountid= $id;
+
+		 					  $stmt->execute();
+		 					  $result = $stmt->get_result();
+
+                 while ($info = mysqli_fetch_array($result)) {
 ?>
 
-
 				<form form action="account/handleEdit.php" class="form-horizontal" method="post">
+					<div>
+						<label>
+							<input type="text" name="id" value="<?php echo $info[0]?>" readonly>
+						</label>
+					</div>
           <div>
 						<label>
-							<input placeholder="email address" type="email" name="email" value="<?php echo $info[0]?>" >
+							<input type="email" name="email" value="<?php echo $info[1]?>" >
 						</label>
 					</div>
 					<div>
@@ -86,12 +94,12 @@ require'account/dbfunction.php';
 					</div>
 					<div>
 						<label>
-							<input  type="text" tabindex="2" name="lname" value="<?php echo $info[1]?>">
+							<input  type="text" tabindex="2" name="lname" value="<?php echo $info[3]?>">
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="Mobile" type="text" tabindex="3" name="mobile" value="<?php echo $info[3]?>">
+							<input placeholder="Mobile" type="text" tabindex="3" name="mobile" value="<?php echo $info[4]?>">
 						</label>
 					</div>
 
@@ -113,6 +121,10 @@ require'account/dbfunction.php';
           }
           mysqli_close($con);
       }
+
+			else {
+			echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
       ?>
 				<!-- /Form -->
 			 </div>

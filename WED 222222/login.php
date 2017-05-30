@@ -13,7 +13,7 @@
 				 <p>If you have previously Login with us, <span>click here</span></p>
 
          <form action="account/handleLogin.php"  method="post">
-					 <h5>User e-mail</h5>
+					 <h5>Account email</h5>
 					 <input type="text" name="email">
 					 <h5>Password</h5>
 					 <input type="password" name="password">

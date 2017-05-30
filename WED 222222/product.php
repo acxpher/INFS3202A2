@@ -1,6 +1,7 @@
 <?php
 include'header.php';
-
+require'account/dbfunction.php';
+require'account/getdbfunction.php';
 ?>
 <!-- the jScrollPane script -->
 <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
@@ -25,8 +26,6 @@ include'header.php';
 		 <div class="col-md-9 product-model-sec">
 
 			 <?php
-		 		 require_once'account/getdbfunction.php';
-		 		 require_once 'account/dbfunction.php';
 
 		 	$con=getDbConnect();
 		 	$ProductArr= getproduct($con);

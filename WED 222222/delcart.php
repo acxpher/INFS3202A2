@@ -9,7 +9,14 @@ $con  =  getDbConnect();
 if (mysqli_connect_errno($con)) {
            echo "Failed to connect to MySQL: " . mysqli_connect_error();
 } else {
-         mysqli_query($con, "DELETE FROM cart WHERE name='$name'");
+  $stmt = $con->prepare("DELETE FROM cart WHERE name = ?");
+  $stmt->bind_param("s",$productname);
+  $productname= $name;
+
+  $stmt->execute();
+  $result = $stmt->get_result();
+
+
 
           if (mysqli_affected_rows($con) > 0) {
 
