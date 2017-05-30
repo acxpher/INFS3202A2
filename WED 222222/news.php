@@ -35,7 +35,7 @@
 						</div>
 
 
-							<script src="ajax/json.php"></script>
+							<script src="ajax/json.php" ></script>
 							<br><br><br><br>
 
 					</div>
@@ -47,7 +47,7 @@
 						<h2>MARVEL STUDIOS' GUARDIANS OF THE GALAXY VOL. 2 TAKES #1 AT THE BOX OFFICE</h2>
 						<hr>
 
-						<img src="images/GOTGv2.jpg" width="820px">
+						<img src="images/GOTGv2.jpg" >
 						<br><br><br>
 						<i><h3>The Guardians knocked it out of the galaxy earning $146.5M this weekend!</h3></i>
 
@@ -71,7 +71,7 @@
 						<h2>DO YOU WANT TO HANG WITH ROBERT DOWNEY JR. ON THE SET OF THE LATEST 'AVENGERS'?</h2>
 						<hr>
 
-						<img src="images/rdj.jpg" width="820px">
+						<img src="images/rdj.jpg" >
 						<br><br><br>
 						<i><h3>Get Set Ready and Support Random Act Funding!</h3></i>
 						
