@@ -217,7 +217,7 @@ header h1 {
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 0 3px 3px #d7e4ed;
 }
 .cd-timeline-content:after {
   content: "";
@@ -231,11 +231,25 @@ header h1 {
 
 
 .cd-timeline-content a {
-  color: #acb7c0;
-  text-decoration: none;
-  font-family: "Dosis-Medium";
+  background:#00a0dc;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  display: block;
+  transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  cursor:pointer;
+  border:2px solid #00a0dc;
 }
 
+
+.cd-timeline-content a:hover {
+  background: transparent;
+  color: #20346f;
+  border:2px solid #20346f;
+}
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
 }
@@ -246,12 +260,12 @@ header h1 {
 .cd-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
-  background: #acb7c0;
+
   color: white;
   border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
+  background-color: #ffffff;
 }
 .cd-timeline-content .cd-date {
   float: left;

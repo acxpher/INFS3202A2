@@ -1936,7 +1936,7 @@ input.item_add.items {
     background: #00a0dc;
     border:2px solid transparent;
     border-radius: 0px;
-    color: #20346f;
+    color: #ffffff;
     font-weight: 700;
     letter-spacing: 1px;
     padding: 14px 36px;
@@ -1958,3 +1958,85 @@ input.item_add.items {
     color: #242424;
     border-color: transparent;
 }
+
+#news-content button {
+	background: #00a0dc;
+    border:2px solid transparent;
+    border-radius: 0px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    margin-top: 15px;
+    margin-right: 16px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+}
+
+
+
+#news-content button:hover {
+	background: transparent;
+	color: #20346f;
+	border:2px solid #20346f;
+}
+
+
+#news-content iframe {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	margin-top: 20px;
+}
+
+#news-content .video {
+	position:relative;
+	height:0;
+	padding-bottom:56.25%
+}
+
+#news-content hr {
+	height: 3px;
+	background-color:  #20346f;
+}
+
+.news-model h1,h2,h3 {
+
+  font-family: 'Dosis-Bold';
+  color: #333;
+  text-align:left;
+}
+
+.news-model h3 {
+
+  font-family: 'BEBAS';
+  color: #333;
+  text-align:left;
+}
+
+
+.news-model p {
+	padding-left: 10px;
+	margin-top: 60px;
+
+  font-family: 'BEBAS';
+  color: #333;
+  text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
