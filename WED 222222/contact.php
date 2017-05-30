@@ -11,9 +11,14 @@
 				<div class="col-md-6 span_1_of_3">
 					<div class="contact_info">
 			    	 	<h4>Find Us Here</h4>
-							<script async defer
-							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ08gd52okN4X_jg2IZ6OGNhATbRQq8GU&callback=initMap">
+
+			    	 		<div id="map">
+			    	 			<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvKcS04MA3uxN8vWg8aLXCxE7iCYVk3Uk&callback=initMap">
 							</script>
+
+			    	 		</div>
+							
       				</div>
 							<div class="Developer Information">
 					     	<h4>Group members:</h4>

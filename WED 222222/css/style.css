@@ -1959,6 +1959,10 @@ input.item_add.items {
     border-color: transparent;
 }
 
+
+
+
+
 #news-content button {
 	background: #00a0dc;
     border:2px solid transparent;
@@ -1967,8 +1971,8 @@ input.item_add.items {
     font-weight: 700;
     letter-spacing: 1px;
     padding: 14px 36px;
-    margin-top: 15px;
-    margin-right: 16px;
+    margin: 0 auto;
+    width: 200px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 
@@ -2001,19 +2005,36 @@ input.item_add.items {
 	background-color:  #20346f;
 }
 
-.news-model h1,h2,h3 {
+.news-model {
+
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+.news-model h1 {
 
   font-family: 'Dosis-Bold';
   color: #333;
-  text-align:left;
+  text-align:center;
+  font-size: 5em;
+}
+
+.news-model h2 {
+
+  font-family: 'BEBAS';
+  color: #333;
+  text-align:center;
 }
 
 .news-model h3 {
 
-  font-family: 'BEBAS';
+  font-family: 'Dosis-Bold';
   color: #333;
-  text-align:left;
+  text-align:center;
 }
+
 
 
 .news-model p {
@@ -2027,7 +2048,11 @@ input.item_add.items {
 
 
 
-
+.centerbtn {
+	display: block;
+    text-align: center;
+	
+}
 
 
 
