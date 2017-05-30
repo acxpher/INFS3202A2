@@ -8,7 +8,7 @@ and open the template in the editor.
 
 function getDbConnect() {
     // get a database connect to studentacad database
-    $con = mysqli_connect ("localhost", "root", "", "marvel");
+    $con = mysqli_connect ("localhost", "root", "", "marvel3");
     return $con;
 };
 

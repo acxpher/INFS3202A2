@@ -3,16 +3,14 @@ define('STATUS_ACTIVE',0);
 define('STATUS_DELETE',0);
 
 
-
-
 function getproduct($con) {
     $product = array();
     if (mysqli_connect_error($con)) {
         echo"fail" . mysqli_connect_error();
     } else {
-        $result = mysqli_query($con, "SELECT P.image, P.name,P.price "
+        $mysqli_result = mysqli_query($con, "SELECT P.image, P.name,P.price "
                 . " FROM products P");
-        while ($row = mysqli_fetch_array($result)) {
+        while ($row = mysqli_fetch_array($mysqli_result)) {
             $product[] = $row;
 
         }
